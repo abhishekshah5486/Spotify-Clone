@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey margin-1 rounded p-1">
+                <div class="logo invert"><img src="spotify-logo.svg" alt="spotify"></div>
+                <ul>
+                    <li><img src="home-icon.svg" class="invert" alt="home">Home</li>
+                    <li><img src="search-icon.svg" class="invert" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey margin-1 rounded">
+                <div class="heading p-1">
+                   <img src="playlist.svg" class="playlist-icon invert" alt="">
+                   <h4>Your Library</h4>
+                   <img src="create.svg" class="create-icon invert" alt="">
+                </div>
+                <!-- <div class="songsList">
+                    <ul>
+                    </ul>
+                </div> -->
+                <div class="songsList-container">
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                        <div class="song-info">
+                        
+                            <div class="song-title">Bahara</div>
+                            <div class="song-artists ellipsis">
+                                Vishal-Shekhar, Shreya Ghoshal, Sona Mohapatra
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Imagine-Dragons:Believer.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Believer</div>
+                            <div class="song-artists ellipsis">
+                                Imagine Dragons
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/No-Love:Shubh.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">No Love</div>
+                            <div class="song-artists ellipsis">
+                                Shubh
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Perfect:Ed-Sheeran.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Perfect</div>
+                            <div class="song-artists ellipsis">
+                                Ed Sheeran
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Shershaah:Ranjha.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Ranjha</div>
+                            <div class="song-artists ellipsis">
+                                Jasleen Royal, B Praak, Romy & Anvita Dutt 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Tere-Naal-Love-Ho-Gaya:Piya.O.Re.Piya.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Piya O Re Piya</div>
+                            <div class="song-artists ellipsis">
+                                Atif Aslam, Shreya Ghoshal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-create-browse">
+                    <div class="create-playlist rounded">
+                        <h2>Create your first playlist</h2>
+                        <p>It's easy, we'll help you</p>
+                        <button class="create-playlist-btn">
+                            Create playlist
+                        </button>
+                    </div>
+                    <div class="browse-podcasts rounded">
+                        <h2>Let's find some podcast to follow</h2>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button class="browse-podcasts-btn">
+                            Browse podcasts
+                        </button>
+                    </div>
+                </div>
+                <div class="footer-legal-links p-1 margin-1">
+                    <div><a href="https://www.spotify.com/in-en/legal/" id="" class="" data-encore-id="textLink"><span class="">Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/" id="" class="" data-encore-id="textLink"><span class="">Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" class="" data-encore-id="textLink"><span class="">Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" class="" data-encore-id="textLink"><span class="">Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="" class="" data-encore-id="textLink"><span class="">About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/" id="" class="" data-encore-id="textLink"><span class="">Accessibility</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" class="" data-encore-id="textLink"><span class="">Cookies</span></a></div>
+                </div>
+                <div class="language-selection-div p-1">
+                    <button class="language-selection-btn" type="button"><img class="invert" src="language.svg" alt="">
+                       English
+                    </button>
+                </div>
+    
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="forward-button">
+                       <img src="backwardButton.svg" class="invert" alt="">
+                    </div>
+                    <div class="backward-button">
+                        <img src="forwardButton.svg" class="invert" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="sign-up">
+                        <a href="Css Components/Sign Up Form/index.html">
+                            <button class="sign-up-button" type="button">Sign up</button>
+                        </a>
+                    </div>
+                    <div class="log-in">
+                        <a href="Css Components/Log In Page/index.html">
+                            <button class="log-in-button" type="button">Log in</button>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1 id="spotify-playlist-heading">Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img   class="songIMG rounded" src="SPOTIFY-PROFILE-PAGE/Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                        <h4 class="song-title">Bahara</h4>
+                        <p> Vishal-Shekhar, Shreya Ghoshal, Sona Mohapatra</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67616d0000b2731b6da489c1cb4c5a301a17fc" alt="">
+                        <h4 class="song-title">Let Me Down Slowly</h4>
+                        <p>Alec Benjamin, Alessia Cara</p>
+                     </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img   class="rounded" src="https://i.scdn.co/image/ab67616d0000b273cb9323e777a492c342794c2f" alt="">
+                        <h4 class="song-title">Khwab Iqlipse Nova</h4>
+                        <p>Iqlipse Nova</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img  class="rounded" src="SPOTIFY-PROFILE-PAGE/Songs Banners/Tere-Naal-Love-Ho-Gaya:Piya.O.Re.Piya.jpeg" alt="">
+                        <h4 class="song-title">Piya O Re Piya</h4>
+                        <p>Atif Aslam, Shreya Ghoshal,Sachin-Jigar</p>
+                     </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img class="rounded" src="SPOTIFY-PROFILE-PAGE/Songs Banners/Shershaah:Ranjha.jpeg" alt="">
+                        <h4 class="song-title">Ranjha</h4>
+                        <p>Jasleen Royal,B Praak,Romy and Anvita Dutt </p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4 class="song-title">Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                            <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4 class="song-title">Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton" isClicked="false">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <!-- <div class="playbar-playButton">
+                    <i class="fa-solid fa-play invert"></i>
+                </div> -->
+                <div class="now-playing-widget">
+                    <img class="song-banner" src="https://i.scdn.co/image/ab67616d0000b273cb9323e777a492c342794c2f" alt="">
+                    <div class="song-details">
+                        <div class="song-title">Khwab Iqlipse Nova</div>
+                        <div class="song-artists scrapText">
+                            Iqlipse Nova
+                        </div>
+                    </div>
+                    <!-- <svg class="heart" isLiked="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path></svg> -->
+                    <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <div class="player-controls__buttons player-controls__buttons--new-icons">
+                        <div class="player-controls_left">
+                           <div class="control-button-shuffle">
+                             <img src="shuffle.svg" alt="">
+                           </div>
+                           <div class="control-button-skip-back">
+                             <img src="playPrevious.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="control-button-playpause">
+                            <img class="invert" src="playPauseBtn.svg" alt="">
+                            <!-- <svg class="pauseBtn" data-encore-id="icon" xmlns="http://www.w3.org/2000/svg"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg> -->
+                            <i class="fa-solid fa-circle-pause"></i>
+                            
+                        </div>
+                        <div class="player-controls_right">
+                           <div class="control-button-skip-forward">
+                             <img  src="playNext.svg" alt="">
+                           </div>
+                           <div class="control-button-repeat">
+                             <img src="repeatSong.svg" alt="">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="playback">
+                        <h3 class="currentSongTime">00:00</h3>
+                       
+                        <div class="playback-bar">
+                            <div class="fill">
+                                <div class="progress-bar-circle">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="songDuration">00:00</h3>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="script.js">
+
+</script>
+</html>

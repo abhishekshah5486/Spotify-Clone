@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: CircularSp;
+    src: url('CircularFonts/CircularStd-Black.otf') format('otf'),
+         url('CircularFonts/CircularStd-BlackItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Bold.otf') format('otf'),
+         url('CircularFonts/CircularStd-BoldItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Book.otf') format('otf'),
+         url('CircularFonts/CircularStd-BookItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Light Italic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Light.otf') format('otf'),
+         url('CircularFonts/CircularStd-Medium.otf') format('otf'),
+         url('CircularFonts/CircularStd-MediumItalic.otf') format('otf');        
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+}
+.log-in-page-header {
+    background-color: #121212;
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.invert {
+    filter: invert(1);
+}
+.spotify-logo-svg {
+    height: 32px;
+    margin-left: 40px;
+}
+.sign-up-form-section {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+}
+.sign-up-form {
+    height: 100%;
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-form-heading {
+    font-weight: bold;
+    font-size: 23px;
+}
+.sign-up-form .username-email {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.username-email h4 {
+    font-weight: bold;
+    font-size: 14.5px;
+    position: relative;
+    margin-top: 2.8rem;
+}
+.email-input {
+    height: 48px;
+    width: 328px;
+    background-color: #121212;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.email-input::placeholder {
+    color: #a7a7a7;
+}
+.email-input:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.username-email p {
+    font-size: 14.5px;
+    color: #1cd760;
+    text-decoration: underline;
+}
+.next-button .next-btn {
+    height: 48px;
+    width: 328px;
+    outline: none;
+    border: none;
+    background-color: #1cd760;
+    color: black;
+    border-radius: 25px;
+    font-weight: 550;
+    font-size: 16.5px;
+    margin-top: 20px;
+}
+.next-btn:hover {
+    background-color: #20e267;
+}
+.horizontal-rule {
+    width: 100%;
+    border: 1px solid #727272;
+    margin-top: 40px;
+}
+.or-div {
+    /* border: 1px solid white; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    bottom: 19px;
+}
+.log-in-accounts {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.xR230zZLI {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.xR230zZTp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xR230zZTp  h3 {
+    font-size: 17px;
+    color: #e6e6e6;
+}
+.log-in-accounts ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.log-in-accounts ul li {
+    list-style: none;
+}
+.log-in-accounts ul li button {
+    outline: none;
+    border: 1px solid #727272;
+    background-color: #121212;
+    border-radius: 25px;
+    width: 328px;
+    height: 48px;
+}
+.log-in-accounts button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.new-google-icon,.facebook-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.vBGH009Lk {
+    border: 1px solid #292929;
+    margin-top: 30px;
+}
+
+.log-in-account {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+}
+#xZA009Tz {
+    font-weight: 500;
+    font-size: 15px;
+    color: #a7a7a7;
+}
+#xZA009Ta {
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+}
+#xZA009Ta:hover {
+    cursor: pointer;
+}
+.terms-conditions {
+    width: 328px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.terms-conditions p {
+    color: #a7a7a7;
+    font-size: 12px;
+}

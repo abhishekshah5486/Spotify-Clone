@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey margin-1 rounded p-1">
+                <ul>
+                    <li><img src="home-icon.svg" class="invert" alt="home">Home</li>
+                    <li><img src="search-icon.svg" class="invert" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey margin-1 rounded">
+                <div class="heading p-1">
+                   <img src="playlist.svg" class="playlist-icon invert" alt="">
+                   <h4>Your Library</h4>
+                   <img src="create.svg" class="create-icon invert" alt="">
+                </div>
+                <div class="songsList-container">
+                    <div class="liked-songs-playlist-card">
+                        <div class="liked-songs">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="playlist-info">
+                            <div class="playlist-title">Liked Songs</div>
+                            <div class="pinned-playlist-content">
+                                <svg class="pinned-playlist-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="false" class="Svg-sc-ytk21e-0 duMMYF G7aCptcOZswI1fN6dGkO" viewBox="0 0 16 16"><title>Pinned</title><path d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"></path></svg>
+                                Playlist &#9679; 0 songs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                        <div class="song-info">
+                        
+                            <div class="song-title">Bahara</div>
+                            <div class="song-artists ellipsis">
+                                Vishal-Shekhar, Shreya Ghoshal, Sona Mohapatra
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Imagine-Dragons:Believer.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Believer</div>
+                            <div class="song-artists ellipsis">
+                                Imagine Dragons
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/No-Love:Shubh.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">No Love</div>
+                            <div class="song-artists ellipsis">
+                                Shubh
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Perfect:Ed-Sheeran.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Perfect</div>
+                            <div class="song-artists ellipsis">
+                                Ed Sheeran
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Shershaah:Ranjha.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Ranjha</div>
+                            <div class="song-artists ellipsis">
+                                Jasleen Royal, B Praak, Romy & Anvita Dutt 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songsList-container-card">
+                        <div class="playBtn-overlay">
+                            <img class="invert" src="play.svg" alt="">
+                        </div>
+                        <img class="song-banner" src="Songs Banners/Tere-Naal-Love-Ho-Gaya:Piya.O.Re.Piya.jpeg" alt="">
+                        <div class="song-info">
+                            <div class="song-title">Piya O Re Piya</div>
+                            <div class="song-artists ellipsis">
+                                Atif Aslam, Shreya Ghoshal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="forward-button">
+                       <img src="backwardButton.svg" class="invert" alt="">
+                    </div>
+                    <div class="backward-button">
+                        <img src="forwardButton.svg" class="invert" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                   
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1 id="spotify-playlist-heading">Made For Abhishek</h1>
+                <div class="cardContainer">
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                     </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                     </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img   class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="playButton">
+                            <i class="fa-solid fa-play invert"></i>
+                        </div>
+                        <img  class="rounded" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="player-controls">
+                    <div class="now-playing-widget">
+                        
+                    </div>
+                    <div class="player-controls__buttons player-controls__buttons--new-icons">
+                        <div class="player-controls_left">
+                           <div class="control-button-shuffle">
+                             <img src="shuffle.svg" alt="">
+                           </div>
+                           <div class="control-button-skip-back">
+                             <img src="playPrevious.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="control-button-playpause">
+                            <img class="invert" src="playPauseBtn.svg" alt="">
+                        </div>
+                        <div class="player-controls_right">
+                           <div class="control-button-skip-forward">
+                             <img  src="playNext.svg" alt="">
+                           </div>
+                           <div class="control-button-repeat">
+                             <img src="repeatSong.svg" alt="">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="playback-bar">
+                    </div>
+                </div>    
+            </div> 
+        </div> -->
+        <div class="playlist-right rounded">
+
+            <div class="playlist-section-card">
+                <div class="xVBS00923TuY">
+                    <div class="playlist-image">
+                        <div class="liked-songs-playlist-img">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="liked-songs-playlist-info">
+                        <h4>Playlist</h4>
+                        <h1>Liked Songs</h1>
+                        <div class="profile-bar">
+                            <img class="profile-img" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                            <h3 class="profile-name">Abhishek</h3>
+                            <div class="dot-icon"> &#9679;</div> 0 songs
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="playlist-action-bar">
+                <div class="action-bar-row">
+                    <div class="play-button">
+                        <i class="fa-solid fa-play invert"></i>
+                    </div>
+                   <div class="sortBox-list">
+                       <h3>List</h3>
+                       <svg class="sortList-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kgVuXA"><path d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"></path></svg>
+                   </div>
+                </div>
+            </div>
+            <div class="contentSpacing">
+                <div class="liked-songs-header">
+                    <div class="liked-songs-index">#</div>
+                    <div class="liked-songs-title">Title</div>
+                    <div class="liked-songs-album">Album</div>
+                    <div class="date-added">Date added</div>
+                    <div class="liked-songs-duration">
+                        <svg class="song-duration-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path><path d="M8 3.25a.75.75 0 0 1 .75.75v3.25H11a.75.75 0 0 1 0 1.5H7.25V4A.75.75 0 0 1 8 3.25z"></path></svg>
+                    </div>
+                </div>
+                <div class="liked-songs-horizontal-line"></div>
+                <div class="liked-songs-main">
+                    <!-- <div class="likedSongs-tracklist eRGHKo009Li">
+                          
+                        <div class="likedSongs-tracklist-row" id="vBNA56LiDGk">
+                            <div class="likedSongs-tracklist-row-index">1</div>
+                            <div class="likedSongs-tracklist-row-title">
+                                <img class="song-banner" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                                <div class="song-info">
+                                    <div class="song-title">No Love</div>
+                                    <div class="song-artists ellipsis">
+                                        Shubh
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="likedSongs-tracklist-row-album">
+                                I hate Love Storys ("From Bahara")
+                            </div>
+                            <div class="likedSongs-dateAdded">Nov 28 2023</div>
+                            <div class="likedSongs-tracklist-row-songDuration">
+                                <div class="likedSongs-tracklist-row-like">
+                                    <svg class="liked-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                                </div>
+                                2:50
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="likedSongs-tracklist">
+                          
+                        <div class="likedSongs-tracklist-row" id="vBNA56LiDGk">
+                            <div class="likedSongs-tracklist-row-index">1</div>
+                            <div class="likedSongs-tracklist-row-title">
+                                <img class="song-banner" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                                <div class="song-info">
+                                    <div class="song-title">No Love</div>
+                                    <div class="song-artists ellipsis">
+                                        Shubh
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="likedSongs-tracklist-row-album">
+                                I hate Love Storys ("From Bahara")
+                            </div>
+                            <div class="likedSongs-dateAdded">Nov 28 2023</div>
+                            <div class="likedSongs-tracklist-row-songDuration">
+                                <div class="likedSongs-tracklist-row-like">
+                                    <svg class="liked-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                                </div>
+                                2:50
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="likedSongs-tracklist">
+                          
+                        <div class="likedSongs-tracklist-row" id="vBNA56LiDGk">
+                            <div class="likedSongs-tracklist-row-index">1</div>
+                            <div class="likedSongs-tracklist-row-title">
+                                <img class="song-banner" src="Songs Banners/I-Hate-Luv-Stories:Bahara.jpg" alt="">
+                                <div class="song-info">
+                                    <div class="song-title">No Love</div>
+                                    <div class="song-artists ellipsis">
+                                        Shubh
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="likedSongs-tracklist-row-album">
+                                I hate Love Storys ("From Bahara")
+                            </div>
+                            <div class="likedSongs-dateAdded">Nov 28 2023</div>
+                            <div class="likedSongs-tracklist-row-songDuration">
+                                <div class="likedSongs-tracklist-row-like">
+                                    <svg class="liked-icon" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                                </div>
+                                2:50
+                            </div>
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="script.js">
+
+</script>
+</html>

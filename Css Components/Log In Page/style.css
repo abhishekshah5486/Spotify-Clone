@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: CircularSp;
+    src: url('CircularFonts/CircularStd-Black.otf') format('otf'),
+         url('CircularFonts/CircularStd-BlackItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Bold.otf') format('otf'),
+         url('CircularFonts/CircularStd-BoldItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Book.otf') format('otf'),
+         url('CircularFonts/CircularStd-BookItalic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Light Italic.otf') format('otf'),
+         url('CircularFonts/CircularStd-Light.otf') format('otf'),
+         url('CircularFonts/CircularStd-Medium.otf') format('otf'),
+         url('CircularFonts/CircularStd-MediumItalic.otf') format('otf');        
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.log-in-page-header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.invert{
+    filter: invert(1);
+}
+.spotify-logo-svg {
+    height: 36px;
+    margin-left: 50px;
+}
+.log-in-page-down-content {
+    background-image: linear-gradient(to bottom, #1a1a1a,#000000);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.log-in-page-form {
+    height: 964px;
+    width: 734px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-in-page-heading {
+    color: white;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.log-in-page-heading h1 {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.log-in-accounts {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.log-in-accounts ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.log-in-accounts ul li {
+    list-style: none;
+}
+.log-in-accounts ul li button {
+    outline: none;
+    border: 1px solid #727272;
+    background-color: #000000;
+    border-radius: 25px;
+    width: 328px;
+    height: 48px;
+}
+.log-in-accounts button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.xR230zZLI {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.xR230zZTp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xR230zZTp  h3 {
+    font-size: 17px;
+    color: #e6e6e6;
+}
+.apple-icon {
+    height: 24px;
+    width: 24px;
+}
+.new-google-icon,.facebook-icon {
+    height: 20px;
+    width: 20px;
+}
+.horizontal-line {
+    border: 1px solid #292929;
+    width: 70%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.log-in-form {
+    color: white;
+    width: 328px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.log-in-form .username-email {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.username-email h4 {
+    font-weight: bold;
+    font-size: 14.5px;
+}
+.username-input {
+    height: 48px;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.username-input::placeholder {
+    color: #a7a7a7;
+}
+.username-input:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.log-in-form .password {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.password h4 {
+    font-weight: bold;
+    font-size: 14.5px;
+    position: relative;
+}
+.password-input {
+    height: 48px;
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.password-input::placeholder {
+    color: #a7a7a7;
+}
+.password-input:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.lock-unlock-xZa023kRTu{
+    position: absolute;
+    top: 735px;
+    right: 610px;
+}
+.password-lock-unlock {
+    position: relative;
+    display: flex;
+}
+.password-lock-icon {
+    position: absolute;
+}
+.password-lock-icon:hover, .password-unlock-icon:hover {
+    path {
+        fill: white;
+    }
+    transition: transform 0.1s ease;
+    transform: scale(1.05);
+}
+path {
+    fill: #a7a7a7;
+}
+
+/* TOGGLE BAR SIGN IN */
+.check-remember-me {
+    display: flex;
+    gap: 15px;
+}
+.check-remember-me h3 {
+    font-size: 14.5px;
+}
+.container {
+    height: 18px;
+    width: 30px;
+    background-color: #727272;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;    
+}
+.container:hover {
+    cursor: pointer;
+}
+.toggle-ball {
+    background-color: #121212;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all 0.08s ease;
+    position: absolute;
+}
+.transition-toggle {
+    right: 0;
+}
+.stretched {
+    width: 18px;
+    border-radius: 25px;
+}
+/* .transition-toggle-reverse {
+    left: 0;
+} */
+/* .animated-toggle {
+    animation-name: toggle;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+.animated-toggle-reverse {
+    animation-name: toggleReverse;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+@keyframes toggle {
+    from {
+      left: 0px;
+    }
+    to {
+      right: 0;
+    }
+}
+@keyframes toggleReverse {
+    from {
+      right: 0;
+    }
+    to {
+      left: 0;
+    }
+} */
+.toggle-color {
+    background-color: #1cd760;
+}
+
+.terms-conditions {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terms-conditions p {
+    font-size: 15px;
+}
+.log-in-button .log-in-btn {
+    height: 48px;
+    width: 328px;
+    outline: none;
+    border: none;
+    background-color: #1cd760;
+    color: black;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16.5px;
+    margin-top: 20px;
+    transition: all 0.1s ease;
+}
+.log-in-btn:hover {
+    transform: scale(1.03);
+    background-color: #20ef6c;
+}
+
+.forgot-passwd {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+.forgot-passwd:hover {
+    color: #1cd760;
+    cursor: pointer;
+}
+.create-account {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+#xZA009Tz {
+    font-weight: 500;
+    font-size: 16px;
+    color: #a7a7a7;
+}
+#xZA009Ta {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+#xZA009Ta:hover {
+    color: #1cd760;
+    cursor: pointer;
+}
+.terms-conditions {
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+}
+.terms-conditions p {
+    color: #a2a2a2;
+    font-size: 12px;
+}
